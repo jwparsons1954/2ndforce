@@ -1,0 +1,8 @@
+RewriteEngine on
+
+
+RewriteCond %{HTTP_HOST} ^2nd-force-recon.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.2nd-force-recon.com$
+RewriteCond %{REQUEST_URI} yii2recall/web/
+RewriteRule (.*) /folder/$1 [L]
+

@@ -1,0 +1,72 @@
+[25-Jan-2018 13:30:30 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'yii\helpers\Html' not found in /home/ctest870/public_html/yii2recall/web/test.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/ctest870/public_html/yii2recall/web/test.php on line 11
+[30-Jan-2018 07:01:49 CST6CDT] PHP Fatal error:  Interface 'app\models\IdentityInterface' not found in /home/ctest870/public_html/yii2recall/models/User.php on line 30
+[30-Jan-2018 07:02:19 CST6CDT] An Error occurred while handling another error:
+yii\base\UnknownPropertyException: Getting unknown property: app\models\User::username in /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Component.php:148
+Stack trace:
+#0 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\base\Component->__get('username')
+#1 /home/ctest870/public_html/yii2recall/views/layouts/header.php(39): yii\db\BaseActiveRecord->__get('username')
+#2 /home/ctest870/public_html/yii2recall/views/layouts/main.php(30): require('/home/ctest870/...')
+#3 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/View.php(332): require('/home/ctest870/...')
+#4 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ctest870/...', Array)
+#5 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/ctest870/...', Array, Object(app\controllers\SiteController))
+#6 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#7 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#8 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#9 [internal function]: yii\web\ErrorAction->run()
+#10 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#11 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#12 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#13 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#14 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\MethodNotAllowedHttpException))
+#15 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\MethodNotAllowedHttpException))
+#16 {main}
+Previous exception:
+yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logout', Array)
+#6 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#7 /home/ctest870/public_html/yii2recall/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/ctest870/public_html/yii2recall/web/index.php(12): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'UNIQUE_ID' => 'WnBs2Q11d@feT8tAiHByxgAAAA0',
+    'HTTPS' => 'on',
+    'PHPHANDLER' => '/usr/local/php70/bin/php',
+    'HTTP_HOST' => '2nd-force-recon.com',
+    'HTTP_X_REAL_IP' => '103.94.192.211',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => '_csrf=d1983e3aa59677b90a8462cab3c5e792ca1337f35396ef3230b1d574d7bb9072a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oJFnAEbNCTwyieqYFRcJol6v7BI-F13z%22%3B%7D; PHPSESSID=ctob2m21rfa9dcvjcj6pjkt792; _identity=fbde7e0306bf4b848e32f8437c28ac78bea48285bf79f67ff6d2d255ddb1aebaa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '2nd-force-recon.com',
+    'SERVER_ADDR' => '37.60.249.246',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '103.94.192.211',
+    'DOCUMENT_ROOT' => '/home/ctest870/public_html',
+    'SERVER_ADMIN' => 'webmaster@2nd-force-recon.com',
+    'SCRIPT_FILENAME' => '/home/ctest870/public_html/yii2recall/web/index.php',
+    'REMOTE_PORT' => '53896',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'r=site%2Flogout',
+    'REQUEST_URI' => '/yii2recall/web/index.php?r=site%2Flogout',
+    'SCRIPT_NAME' => '/yii2recall/web/index.php',
+    'PHP_SELF' => '/yii2recall/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1517317337.2061860561370849609375,
+    'REQUEST_TIME' => 1517317337,
+]
